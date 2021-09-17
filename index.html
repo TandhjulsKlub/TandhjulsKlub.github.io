@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+<title>Tandhjulsklubben</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
+
+body {
+  background: no-repeat top center;
+  background-color: black;
+  background-size: 100% 450px;
+  
+  overflow-x: hidden;
+  display: block;
+  z-index: 5;
+
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+header {
+
+	display: absolute;
+
+	background-color: rgb(32, 28, 28);
+	top: 0px;
+	left: 0px;
+	height: 64px;
+	width: cover;
+	padding: 4px 16px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 0;
+	height: 64px;
+	margin-left: 30px;
+}
+
+header h1 {
+	color:white;
+	margin-left: 15px;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.image {
+	width: 32px;
+	height: 32px;
+}
+
+.navbarItem {
+	display: flex;
+	padding: 8px 0px;
+
+	background-position: center;
+	transition: background 0.8s;
+	border-radius: 0.25rem;
+
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:7px;
+	margin-right:7px;
+}
+
+.navbarItem h1 {
+	color: white;
+	font-family: 'Rubik',sans-serif;
+	font-weight: 600;
+	font-size:17px;
+	opacity: 0.7;
+	margin-left:8px;
+	margin-right:8px;
+
+	outline: 0;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.navbarItem:hover {
+	opacity: 1;
+	background: rgb(48, 47, 47) radial-gradient(circle, transparent 1%, rgb(146, 146, 146) 1%) center/15000%;
+}
+.navbarItem:active {
+  background-color: rgb(146, 146, 146);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.navbarSpacer {
+	flex-grow: 1!important;
+}
+
+.displayImage {
+	width: 100%;
+	height: 500px;
+	display: flex;
+
+	z-index: 10;
+
+	background: no-repeat top center;
+	background-image: linear-gradient(to bottom, rgba(39, 31, 31, 0.1), rgba(0, 0, 0)), url("images/landscape.jpg");
+	background-size: 100% 500px;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.displayImage a {
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size:30px;
+	text-decoration: none;
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: inherit;
+	align-items: inherit;
+}
+
+.newNavbar {
+	display: none;
+
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 0;
+	height: 64px;
+}
+
+.newNavbar h1 {
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+	.navbar {
+		display: none;
+	}
+	.newNavbar {
+		display: flex;
+	}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<div class="navbar">
+		<img class="image" src="images/163190179975855669.png">
+		<h1 style="font-family:'Rubik',sans-serif;margin-left:15px;">|</h1>
+
+		<div class="navbarItem" id="forside">
+			<h1>FORSIDE</h1>
+		</div>
+		<div class="navbarItem" id="beton">
+			<h1>BETON FIRMAET</h1>
+		</div>
+		<div class="navbarItem" id="principper">
+			<h1>VORES PRINCIPPER</h1>
+		</div>
+		<div class="navbarItem" id="band">
+			<h1>VORES BAND</h1>
+		</div>
+
+		<div class="navbarSpacer"></div>
+
+		<div class="navbarItem" id="discord" style="margin-right:40px;">
+			<h1>DISCORD</h1>
+		</div>
+	</div>
+	<div class="newNavbar">
+		<h1>≡</h1>
+	</div>
+</header>
+<div class="displayImage">
+	<a href="https://discord.gg/Dd48AsUckb" target="_blank">
+		<img src="images/Discord-Logo-White.png" style="height:68px;width:64px;">
+		discord.gg/Dd48AsUckb
+	</a>
+</div>
+
+</body>
+</html>
+
